@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وين لقيت؟ - دليلك المجتمعي الأول</title>
+    <meta name="description"
+        content="وين لقيت؟ تطبيق مجتمعي سوداني يجمع بين التواصل الاجتماعي والسوق المحلي ونظام المقايضة والاستعارة. تواصل مع جيرانك واكتشف مجتمعك!">
+    <meta name="keywords" content="وين لقيت, تطبيق سوداني, مجتمع, سوق, مقايضة, استعارة, تواصل اجتماعي">
+    <meta name="theme-color" content="#0a7e5c">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Particle Canvas Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">
+                <img src="images/logo.png" alt="وين لقيت؟" class="nav-logo-img">
+                <span class="nav-logo-text">وين لقيت؟</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+                <li><a href="#features" class="nav-link">المميزات</a></li>
+                <li><a href="#how-it-works" class="nav-link">كيف يعمل؟</a></li>
+                <li><a href="#screenshots" class="nav-link">لقطات الشاشة</a></li>
+                <li><a href="#download" class="nav-link nav-link-cta">حمّل الآن</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content" data-animate="fade-right">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    <span>تطبيق مجتمعي سوداني 🇸🇩</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">اكتشف كل ما هو</span>
+                    <span class="hero-title-line hero-title-gradient">جديد في حيّك!</span>
+                </h1>
+                <p class="hero-description">
+                    تواصل مع جيرانك، تسوّق من مجتمعك، بادل أغراضك، واستعر ما تحتاجه.
+                    <strong>وين لقيت؟</strong> دليلك المجتمعي الأول في السودان.
+                </p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary btn-glow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        حمّل التطبيق مجاناً
+                    </a>
+                    <a href="#features" class="btn btn-outline">
+                        اكتشف المميزات
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number" data-count="5000">0</span>
+                        <span class="hero-stat-label">مستخدم نشط</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number" data-count="120">0</span>
+                        <span class="hero-stat-label">مجموعة مجتمعية</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number" data-count="1000">0</span>
+                        <span class="hero-stat-label">عملية مقايضة</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-animate="fade-left">
+                <div class="hero-phone-wrapper">
+                    <div class="hero-phone-glow"></div>
+                    <img src="images/hero-mockup.png" alt="تطبيق وين لقيت" class="hero-phone-img">
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+            <span>اسحب للأسفل</span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">لماذا وين لقيت؟</span>
+                <h2 class="section-title">كل ما يحتاجه مجتمعك في <span class="text-gradient">تطبيق واحد</span></h2>
+                <p class="section-subtitle">منصة متكاملة تجمع بين التواصل الاجتماعي والتجارة المحلية والمشاركة المجتمعية
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card feature-card-wide" data-animate="fade-up" data-delay="100">
+                    <div class="feature-card-content">
+                        <div class="feature-icon feature-icon-green">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">مجتمعك في جيبك</h3>
+                        <p class="feature-desc">تواصل مع الجيران، انضم لمجموعات حيّك، وشارك في نقاشات مجتمعية. اكتشف
+                            أشخاص قد تعرفهم وابني شبكة علاقاتك المحلية.</p>
+                    </div>
+                    <div class="feature-card-visual">
+                        <img src="images/feature-social.png" alt="التواصل الاجتماعي" loading="lazy">
+                    </div>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="200">
+                    <div class="feature-icon feature-icon-blue">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1" />
+                            <circle cx="20" cy="21" r="1" />
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">السوق المحلي</h3>
+                    <p class="feature-desc">اعرض منتجاتك وتسوّق من جيرانك بكل سهولة وأمان.</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="300">
+                    <div class="feature-icon feature-icon-teal">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="17 1 21 5 17 9" />
+                            <path d="M3 11V9a4 4 0 0 1 4-4h14" />
+                            <polyline points="7 23 3 19 7 15" />
+                            <path d="M21 13v2a4 4 0 0 1-4 4H3" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">بادل بدون فلوس</h3>
+                    <p class="feature-desc">عندك سلعة وتحتاج أخرى؟ بادل مع جيرانك بدون أي تكلفة مالية!</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="400">
+                    <div class="feature-icon feature-icon-purple">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">نظام الاستعارة</h3>
+                    <p class="feature-desc">استعر ما تحتاجه من جيرانك. وفّر المال وساعد الآخرين!</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="500">
+                    <div class="feature-icon feature-icon-orange">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">رسائل فورية</h3>
+                    <p class="feature-desc">تواصل مباشر مع أي مستخدم في المجتمع بسرعة وخصوصية.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Showcase -->
+    <section class="showcase" id="how-it-works">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">كيف يعمل التطبيق؟</span>
+                <h2 class="section-title">تجربة متكاملة <span class="text-gradient">بثلاث خطوات</span></h2>
+            </div>
+            <div class="steps-container">
+                <div class="step-card" data-animate="fade-up" data-delay="100">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>سجّل حسابك</h3>
+                        <p>أنشئ حسابك مجاناً في ثوانٍ وانضم لمجتمعك المحلي.</p>
+                    </div>
+                    <div class="step-visual">
+                        <img src="images/feature-profile.png" alt="التسجيل" loading="lazy">
+                    </div>
+                </div>
+                <div class="step-card" data-animate="fade-up" data-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>استكشف مجتمعك</h3>
+                        <p>انضم للمجموعات، تابع الجيران، واكتشف ما يدور حولك.</p>
+                    </div>
+                    <div class="step-visual">
+                        <img src="images/feature-community.png" alt="المجتمع" loading="lazy">
+                    </div>
+                </div>
+                <div class="step-card" data-animate="fade-up" data-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>تفاعل وشارك</h3>
+                        <p>بادل، استعر، تسوّق، وتواصل مع مجتمعك بكل سهولة.</p>
+                    </div>
+                    <div class="step-visual">
+                        <img src="images/feature-barter.png" alt="المقايضة" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Carousel -->
+    <section class="screenshots" id="screenshots">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">لقطات الشاشة</span>
+                <h2 class="section-title">اطّلع على <span class="text-gradient">تجربة التطبيق</span></h2>
+            </div>
+            <div class="screenshots-carousel" data-animate="fade-up">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <img src="images/feature-home.png" alt="الشاشة الرئيسية" loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/feature-social.png" alt="التواصل" loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/feature-community.png" alt="المجتمع" loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/feature-barter.png" alt="المقايضة" loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/feature-borrow.png" alt="الاستعارة" loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/feature-borrow2.png" alt="الاستعارة" loading="lazy">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/feature-profile.png" alt="الملف الشخصي" loading="lazy">
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn carousel-btn-prev" id="carouselPrev" aria-label="السابق">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="9 18 15 12 9 6" />
+                        </svg>
+                    </button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn carousel-btn-next" id="carouselNext" aria-label="التالي">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="15 18 9 12 15 6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial / Value Proposition -->
+    <section class="value-section">
+        <div class="container">
+            <div class="value-grid" data-animate="fade-up">
+                <div class="value-card">
+                    <div class="value-icon">💰</div>
+                    <h3>وفّر المال</h3>
+                    <p>بادل واستعر بدلاً من الشراء. حافظ على ميزانيتك بطريقة ذكية.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>مجتمع متكافل</h3>
+                    <p>ساعد جيرانك واستفد من مساعدتهم. مجتمع يدعم بعضه البعض.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🌍</div>
+                    <h3>حافظ على البيئة</h3>
+                    <p>أعد استخدام الأغراض بدلاً من رميها. كل مقايضة تحمي كوكبنا.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">⭐</div>
+                    <h3>اكسب النقاط</h3>
+                    <p>شارك وتفاعل واكسب نقاط مكافأة. كلما ساهمت أكثر، ارتفع تصنيفك!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA Section -->
+    <section class="download-section" id="download">
+        <div class="download-bg-shapes">
+            <div class="download-shape download-shape-1"></div>
+            <div class="download-shape download-shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="download-container" data-animate="fade-up">
+                <div class="download-content">
+                    <h2 class="download-title">حمّل <span class="text-gradient-light">وين لقيت؟</span> الآن</h2>
+                    <p class="download-desc">انضم لآلاف المستخدمين واكتشف مجتمعك المحلي. التطبيق مجاني بالكامل!</p>
+                    <div class="download-buttons">
+                        <a href="download/WinLegit.apk" class="store-btn google-play-btn" id="googlePlayBtn" download>
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path
+                                    d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.707l2.386 1.381a1 1 0 0 1 0 1.738l-2.386 1.381-2.537-2.537 2.537-2.537v.574zm-3.906-2.2L4.864 0.165l10.937 6.333-2.009 2.302z" />
+                            </svg>
+                            <div class="store-btn-text">
+                                <span class="store-btn-small">حمّله من</span>
+                                <span class="store-btn-big">Google Play</span>
+                            </div>
+                        </a>
+                        <a href="download/WinLegit.apk" class="store-btn app-store-btn" id="appStoreBtn" download>
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                <path
+                                    d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                            </svg>
+                            <div class="store-btn-text">
+                                <span class="store-btn-small">حمّله من</span>
+                                <span class="store-btn-big">App Store</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="download-visual">
+                    <img src="images/hero-hand.png" alt="وين لقيت في يدك" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="وين لقيت؟" class="footer-logo">
+                    <p class="footer-tagline">دليلك المجتمعي الأول 🇸🇩</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/tepor4" aria-label="Facebook" class="social-link"
+                            target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/tepor44?igsh=MWx4cWt5azN3Ymprdw==" aria-label="Instagram"
+                            class="social-link" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="https://x.com/tmnly40007253?t=ewWI2wAKFkGo8tV5j2_svw&s=09" aria-label="X"
+                            class="social-link" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@tepor4?_r=1&_t=ZN-941kLi2shHT" aria-label="TikTok"
+                            class="social-link" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 448 512" fill="currentColor">
+                                <path
+                                    d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25V349.38A162.55 162.55 0 1 1 185 188.31V278.2a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.18 121.18 0 0 0 1.86 22.17h0A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14z" />
+                            </svg>
+                        </a>
+                        <a href="https://youtube.com/@tepor4?si=L-9RPKHngiBhK2X8" aria-label="YouTube"
+                            class="social-link" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#features">المميزات</a></li>
+                        <li><a href="#how-it-works">كيف يعمل؟</a></li>
+                        <li><a href="#screenshots">لقطات الشاشة</a></li>
+                        <li><a href="#download">تحميل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>قانوني</h4>
+                    <ul>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">شروط الاستخدام</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 وين لقيت؟ - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
